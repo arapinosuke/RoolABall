@@ -1,0 +1,50 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PickUpDisapperCounter : MonoBehaviour
+{
+    /// <summary>
+    /// 自分が消えたカウント
+    /// </summary>
+    public int DissapperCount { get; private set; } = 0;
+
+    /// <summary>
+    /// UnityEditorで設定するColliderReceivAction 
+    /// </summary>
+    [SerializeField] private ColliderReceiveAction m_colliderReceiveAction = null;
+
+    private PickUpDisposition m_pickUpDisposition = null;
+
+    private void Start()
+    {
+        m_pickUpDisposition = GetComponent<PickUpDisposition>();
+        switch(m_pickUpDisposition.m_pickUpDisposition)
+        {
+            case PickUpDisposition.PublicPickUpDisposition.None:
+                DissapperCount = 1;
+                break;
+            case PickUpDisposition.PublicPickUpDisposition.SpeedUp:
+                DissapperCount = 2;
+                break;
+            case PickUpDisposition.PublicPickUpDisposition.SpeedDown:
+                DissapperCount = 3;
+                break;
+            case PickUpDisposition.PublicPickUpDisposition.QTE:
+                DissapperCount = 10;
+                break;
+        }
+    }
+    private void Update()
+    {
+        if(m_colliderReceiveAction==null)
+        {
+            return;
+        }
+
+        if(m_colliderReceiveAction.IsTriggerEnter)
+        {
+            PickUpCountPresenter.CountDisplay(DissapperCount);
+        }
+    }
+}
