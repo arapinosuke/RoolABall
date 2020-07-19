@@ -2164,7 +2164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.1509434, g: 0.1509434, b: 0.1509434, a: 1}
+  m_Color: {r: 0.12517802, g: 0.9150943, b: 0.6089262, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2414,7 +2414,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Clear
 --- !u!222 &1614942889
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3012,17 +3012,17 @@ PrefabInstance:
     - target: {fileID: 901315716287420359, guid: 14152eacbf1c34e4ca5c1f8e8de0e555,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.1509434
+      value: 0.12517802
       objectReference: {fileID: 0}
     - target: {fileID: 901315716287420359, guid: 14152eacbf1c34e4ca5c1f8e8de0e555,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.1509434
+      value: 0.9150943
       objectReference: {fileID: 0}
     - target: {fileID: 901315716287420359, guid: 14152eacbf1c34e4ca5c1f8e8de0e555,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.1509434
+      value: 0.6089262
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14152eacbf1c34e4ca5c1f8e8de0e555, type: 3}
@@ -3041,7 +3041,7 @@ PrefabInstance:
     - target: {fileID: 397404638420758699, guid: 523f4c7c01816d84ca3cc248670f2f42,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6
+      value: 5.79
       objectReference: {fileID: 0}
     - target: {fileID: 397404638420758699, guid: 523f4c7c01816d84ca3cc248670f2f42,
         type: 3}
@@ -3120,7 +3120,7 @@ PrefabInstance:
     - target: {fileID: 6578991482762574443, guid: 6de51d475dd74de458c46682db630b7b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.48
+      value: -2.68
       objectReference: {fileID: 0}
     - target: {fileID: 6578991482762574443, guid: 6de51d475dd74de458c46682db630b7b,
         type: 3}
